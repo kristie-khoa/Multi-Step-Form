@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-text-primary-navy: hsl(213, 96%, 18%);
+  --color-accent-purplish: #473dff;
+  --color-step-text-blue: hsl(228, 100%, 84%);
+  --color-active-step-light-blue: hsl(206, 94%, 87%);
+  --color-error: hsl(354, 84%, 57%);
+
+  --color-gray: hsl(231, 11%, 63%);
+  --color-light-gray: #d6d9e6;
+  --color-magnolia: hsl(217, 100%, 97%);
+  --color-text-white: hsl(231, 100%, 99%);
+  --color-card-bg: hsl(0, 0%, 100%);
+  --border-radius: 0.5rem;
+  --box-shadow: 0px 7px 15px hsla(213, 96%, 18%, 0.096);
+
+  font-family: "Ubuntu", sans-serif, Inter, system-ui, Avenir, Helvetica, Arial;
+  line-height: 1.5;
+
+  font-size: 16px;
+  font-weight: 400;
+  /* letter-spacing: 0.05rem; */
+
+  /* color-scheme: light dark;
+  
+  ; */
+  color: var(--color-text-primary-navy);
+  background-color: var(--color-magnolia);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+/* input, */
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+a {
+  font-weight: 500;
+  color: var(--color-gray);
+  text-decoration: inherit;
+  margin: auto 0;
+}
+
+a:hover {
+  color: var(--color-text-primary-navy);
+}
+
+input {
+  border: 1.5px solid var(--color-light-gray);
+  color: var(--color-text-primary-navy);
+  border-radius: 0.5rem;
+  padding: 1rem 0.75rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--color-accent-purplish);
+}
+
+input:invalid {
+  outline: none;
+
+  /* border-color: var(--color-error); */
+}
+
+body {
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.1rem;
+}
+
+h4,
+input::placeholder {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-gray);
+}
+
+h5 {
+  font-weight: 400;
+}
+
+/* h2 {
+  font-size: 1rem;
+  font-weight: 400;
+} */
+
+button {
+  border: 1px solid transparent;
+  border-radius: var(--border-radius);
+  padding: 0.75rem 1.5rem;
+  color: var(--color-card-bg);
+  font-size: 1rem;
+  background-color: var(--color-text-primary-navy);
+}
+button:hover {
+  filter: brightness(140%);
+}
+
+@media (max-height: 37.5rem) {
+  :root {
+    font-size: calc(2vh + 4px);
+  }
+}
+
+@media (max-width: 940px) {
+  :root {
+    font-size: calc(2vw - 2.8px);
+  }
+}
